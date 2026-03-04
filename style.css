@@ -1,0 +1,146 @@
+   body {
+            font-family: 'Tahoma', 'Geneva', sans-serif;
+            background-color: #B0DAF1;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .window-container {
+            max-width: 90%;
+            margin: 0 auto;
+            background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(224,240,255,1) 100%);
+            border: 3px solid #224870;
+            border-radius: 15px;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        header {    
+            background-color: #0A8754;
+            color: #C0DA74;
+            padding: 15px 20px;
+            text-align: center;
+            border-bottom: 2px solid #224870;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            text-shadow: 5px 4px 0px #224870;
+        }
+        nav {
+            background-color: #f0f0f0;
+            padding: 0;
+            border-bottom: 1px solid #ccc;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #224870;
+            font-weight: bold;
+            border-right: 1px solid #ccc;
+            background: linear-gradient(180deg, #ffffff 0%, #e0e0e0 100%);
+            cursor: pointer;
+        }
+        nav ul li a:hover, nav ul li a.active {
+            background: #d0e0ff;
+        }
+        .main-content {
+            display: flex;
+            padding: 20px;
+            min-height: 400px;
+        }
+        .profile-sidebar {
+            flex: 1;
+            max-width: 250px;
+            margin-right: 20px;
+            background-color: white;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            height: fit-content;
+        }
+        .avatar-box {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .avatar-img {
+            width: 120px;
+            height: 120px;
+            background-color: #eee;
+            border: 3px solid #007bff;
+            border-radius: 50%;
+            display: inline-block;
+            line-height: 120px;
+            color: #aaa;
+        }
+        .avatar-img img{
+            max-width: 120px;
+            max-height: 120px;
+            border-radius: 50%;
+        }
+        .status-dot {
+            height: 12px;
+            width: 12px;
+            background-color: #2ecc71;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        .content-area {
+            flex: 2;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .content-card {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .content-card h2 {
+            margin-top: 0;
+            color: #224870;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+        }
+        .retro-button {
+            background: linear-gradient(180deg, #81c784 0%, #388e3c 100%);
+            color: white;
+            border: 2px solid #1b5e20;
+            border-radius: 20px;
+            padding: 8px 15px;
+            font-weight: bold;
+            cursor: pointer;
+            text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            margin-top: 10px;
+        }
+        .retro-button:hover {
+            opacity: 0.9;
+        }
+        ul.list-retro {
+            list-style-type: square;
+            color: #224870;
+        }
+        ul.list-retro li span {
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 0.8em;
+            color: #777;
+            background-color: #f0f0f0;
+            border-top: 1px solid #ccc;
+        }

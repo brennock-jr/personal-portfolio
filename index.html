@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jplopesvf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="window-container">
+        <header>
+            <h1>João Paulo Lopes</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a onclick="openTab('inicio')" class="tab-link active" id="link-inicio">Início</a></li>
+                <li><a onclick="openTab('projetos')" class="tab-link" id="link-projetos">Projetos</a></li>
+                <li><a onclick="openTab('hobbies')" class="tab-link" id="link-hobbies">Hobbies</a></li>
+                <li><a onclick="openTab('sobre')" class="tab-link" id="link-sobre">Mais Informações</a></li>
+            </ul>
+        </nav>
+
+        <div class="main-content">
+            <aside class="profile-sidebar">
+                <div class="avatar-box">
+                    <div class="avatar-img"><img src="./src/me.jpg" alt="foto"></div>
+                    <h3><span class="status-dot"></span> Admin</h3>
+                    <p><em>"Engenharia da Computação"</em></p>
+                </div>
+                <div class="profile-details">
+                    <p><strong>De:</strong> Petrolina, PE</p>
+                    <p><strong>Status:</strong> Codando</p>
+                    <button class="retro-button">Deixar Scrap</button>
+                </div>
+            </aside>
+
+            <section class="content-area">
+                
+                <div id="inicio" class="tab-content active">
+                    <div class="content-card">
+                        <h2>Bem-vindo ao meu domínio pessoal!</h2>
+                        <p>Este espaço é dedicado a documentar meus códigos, aventuras com servidores e interesses pessoais. Navegue pelas abas acima para conhecer um pouco mais do que ando construindo e estudando.</p>
+                    </div>
+                </div>
+
+                <div id="projetos" class="tab-content">
+                    <div class="content-card">
+                        <h2>Algoritmos em C e Prolog</h2>
+                        <p>Implementações matemáticas e lógicas, abrangendo desde métodos numéricos (como o método da falsa posição) e análise de grafos, até regras lógicas e convergência de séries.</p>
+                    </div>
+                </div>
+
+                <div id="hobbies" class="tab-content">
+                    <div class="content-card">
+                        <h2>Hobbies & Interesses</h2>
+                        <ul class="list-retro">
+                            <li><span><strong>RPG de Mesa:</strong> Atuação como Mestre de Jogo (Game Master) em campanhas de Star Wars, Cthulhu e Hunter: The Reckoning.</span></li>
+                            <li><span><strong>Yu-Gi-Oh!:</strong> Montagem de decks e extração/análise de artes das cartas.</span></li>
+                            <li><span><strong>Eletrônica Prática:</strong> Reparo autodidata de eletrodomésticos e eletrônicos, incluindo televisões e geladeiras.</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="sobre" class="tab-content">
+                    <div class="content-card">
+                        <h2>Sobre Mim</h2>
+                        <p>Sou estudante de Engenharia da Computação na Universidade Federal em Petrolina, Pernambuco.</p>
+                        <p>Meu foco de estudos abrange desde a base matemática e teórica da computação até a parte de infraestrutura, redes e sistemas operacionais Linux.</p>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        <footer>
+            <p>Hospedado via GitHub Pages | Criado em 2026</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
